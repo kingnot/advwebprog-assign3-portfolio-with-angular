@@ -1,0 +1,34 @@
+<!--
+/*
+ * File Name: contact.ejs
+ * Author's Name: Fei Wang
+ * Website Name: My PortFolio
+ * http://myportfolioexpress.azurewebsites.net/
+ * Description: This is the contact page html view file
+ */
+-->
+
+<% include partials/header.ejs %>
+<div class="container">
+    <h1><%= title %></h1>
+    <form method="post" role="form">
+        <div class="form-group">
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" required class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" required class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" required class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="comment">Comment or Inquiry</label>
+            <textarea name="comment" class="form-control" rows="4">               </textarea>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-success">
+    </form>
+</div>
+<% include partials/footer.ejs %>

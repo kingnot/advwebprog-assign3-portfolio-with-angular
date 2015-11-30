@@ -1,0 +1,116 @@
+<!--
+/*
+ * File Name: partials/about.ejs
+ * Author's Name: Fei Wang
+ * Website Name: My PortFolio
+ * http://myportfolioexpress.azurewebsites.net/
+ * Description: This is the generic header part for pages
+ */
+-->
+
+<!--This file contains the generic html for header-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- scale for device responsiveness-->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%= title %></title>
+      
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+      
+    <!-- Font Awesome Icons CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <!-- Custom CSS --> 
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+      <div class="inner">
+        <nav class="navbar navbar-inverse">
+          
+          <ul class="nav navbar-nav">
+            <% if(title == "Home" ) { %>
+              <li class="active">
+            <% } else { %>
+              <li>
+            <% } %>
+              <a href="/">Home</a></li>
+            <% if(title == "About Me" ) { %>
+              <li class="active">
+            <% } else { %>
+              <li>
+            <% } %>  
+              <a href="/about">About</a></li>
+            <% if(title == "Projects" ) { %>
+              <li class="active">
+            <% } else { %>
+              <li>
+            <% } %>
+              <a href="/project">Projects</a></li>
+            <% if(title == "Services" ) { %>
+              <li class="active">
+            <% } else { %>
+              <li>
+            <% } %>
+              <a href="/service">Services</a></li>
+            <% if(title == "Contact Me" ) { %>
+              <li class="active">
+            <% } else { %>
+              <li>
+            <% } %>
+              <a href="/contact">Contact</a></li>
+          </ul>
+          
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <% if(title == "Home" ) { %>
+                  <li class="active">
+                <% } else { %>
+                <li>
+                  <% } %>
+                  <a href="/">Home</a></li>
+                <li role="separator" class="divider"></li>
+                <% if (displayName) { %>
+                  <% if(title == "Businesscontact" ) { %>
+                  <li class="active">
+                <% } else { %>
+                <li>
+                  <% } %>
+                  <a href="/businesscontacts">Business Contacts</a></li>
+                  <% if(title == "Users" ) { %>
+                  <li class="active">
+                    <% } else { %>
+                  <li>
+                    <% } %>
+                    <a href="/users">Users</a></li>
+                  <li class="navbar-text">Hello,
+                    <%= displayName %>
+                  </li>
+                  <li><a href="/logout">Logout</a></li>
+                  <% } else { %>
+                    <% if(title == "Register" ) { %>
+                  <li class="active">
+                  <% } else { %>
+                  <li>
+                  <% } %>
+                      <a href="/register">Register</a></li>
+                    <% if(title == "Login" ) { %>
+                  <li class="active">
+                  <% } else { %>
+                  <li>
+                  <% } %>
+                      <a href="/login">Login</a></li>
+                    <% } %>
+              </ul> <!-- nav navbar-nav navbar-right -->
+            </div> <!-- collapse navbar-collapse -->
+          </div> <!-- container-fluid -->
+        </nav> <!-- navbar navbar-inverse -->
+      </div> <!-- inner -->
+      

@@ -1,0 +1,6 @@
+node_modules
+.DS_Store
+.c9
+bower_components
+public/lib
+typings

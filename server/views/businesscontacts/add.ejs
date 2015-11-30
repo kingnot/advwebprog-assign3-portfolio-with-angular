@@ -1,0 +1,37 @@
+<!--
+/*
+ * File Name: businesscontacts/add.ejs
+ * Author's Name: Fei Wang
+ * Website Name: My PortFolio
+ * http://myportfolioexpress.azurewebsites.net/
+ * Description: This is the page where logged in user can add a new business contact
+ */
+-->
+
+<% include ../partials/header.ejs %>
+
+<main class="container">
+    <h1>Add a New Business Contact</h1>
+       <div class="col-sm-4">
+        <form method="post">
+            <fieldset class="form-group">
+                <label for="contactName">Contact Name: *</label>
+                <input name="contactName" type="text" class="form-control" required />
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="phone">Contact Number: *</label>
+                <input name="phone" type="tel" class="form-control" required />
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="email">Email: *</label>
+                <input name="email" type="email" class="form-control" required autofocus />
+            </fieldset>
+            <fieldset class="form-group text-right">
+                <input type="submit" class="btn btn-success" value="Submit"/>
+            </fieldset>
+        </form>
+    </div>
+
+</main>
+
+<% include ../partials/footer.ejs %>

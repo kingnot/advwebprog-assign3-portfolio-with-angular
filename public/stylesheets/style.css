@@ -1,0 +1,134 @@
+/*
+ * File Name: style.css
+ * Author's Name: Fei Wang
+ * Website Name: My PortFolio
+ * http://myportfolioexpress.azurewebsites.net/
+ * Description: This is the customized style file for CSS
+ */
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  height: 700px;
+  color: floralwhite;
+}
+
+a {
+  color: #00B7FF;
+}
+
+div {
+    display: block;
+}
+
+ul {
+    display: block;
+}
+
+/*For Header Part Styles*/
+nav.navbar-inverse {
+    background-image: linear-gradient(to bottom, #10EDFF 0px, #222 100%);
+}
+h3.masthead-brand {
+    color:cornsilk;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*For Body Part Styles*/
+div.cover {
+    height: 650px;
+    background: url(../images/Fei_Wang_Cover.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 100px;
+    margin-bottom: 15px;
+}
+
+div.cover p {
+    margin-top: 35px;
+    font-size: 18px;
+} 
+
+div.cover p.lead {
+    margin-top: 50px;
+    font-size: 23px;
+}
+
+.container {
+    height: 650px;
+    background-color: #03E8BA;
+    padding-top: 80px;
+    margin-bottom: 15px;
+}
+
+div.container p {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+div.container h1 {
+    padding-bottom: 20px;
+}
+
+h2.blog-post-title {
+    font-size: 25px;
+}
+
+div.row {
+    margin-top: 50px;
+}
+
+form {
+    text-align: left;
+}
+
+.panel-info {
+    color: #2E6DA4;
+}
+
+/*For Footer Part Styles*/
+footer {
+    display: block;
+    background-color: #10EDFF;
+    color: white;    
+}
+
+footer p {
+    padding-top: 10px;
+}
+
+footer ul.social-links {
+    padding-left: 0px;
+    margin-bottom: 10px;
+    color: floralwhite;
+}
+ul.social-links {
+    padding-top: 5px;
+}
+
+ul.social-links li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 5px;
+}
+
+.social-links a {
+    color:white;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
