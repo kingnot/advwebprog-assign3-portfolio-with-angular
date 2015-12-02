@@ -6,6 +6,18 @@ var express = require('express');
 var passport = require('passport');
 var router = express.Router();
 
+var User = require('../models/user');
+
+/* Utility functin to check if user is authenticated */
+function requireAuth(req, res, next){
+
+  // check if the user is logged in
+  if(!req.isAuthenticated()){
+    return res.redirect('/login');
+  }
+  next();
+}
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home',
@@ -91,6 +103,15 @@ router.post('/register', passport.authenticate('local-registration', {
 router.get('/logout', function (req, res){
   req.logout();
   res.redirect('/');
+});
+
+/* GET home page. */
+router.get('/todoList', requireAuth, function(req, res, next) {
+  res.render('todos/index', { 
+      title: 'Todo List',
+      displayName: req.user ? req.user.displayName : '',
+      username: req.user ? req.user.username : '' 
+  });
 });
 
 module.exports = router;

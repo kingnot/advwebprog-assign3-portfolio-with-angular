@@ -91,6 +91,19 @@ form {
     color: #2E6DA4;
 }
 
+/* for todo list styling */
+.panel-body h4 {
+    color: #2E6DA4;
+}
+
+.panel-body h5 {
+    color: #2E6DA4;
+}
+
+ul.list-group span {
+    color: #2E6DA4;
+}
+
 /*For Footer Part Styles*/
 footer {
     display: block;

@@ -24,6 +24,7 @@ var routes = require('./server/routes/index');
 var users = require('./server/routes/users');
 var businesscontacts = require('./server/routes/businesscontacts');
 var contact = require('./server/routes/contact');  //define a route for contact
+var todos = require('./server/routes/todos');   //define a route for todo
 
 var app = express();
 
@@ -57,6 +58,7 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/businesscontacts', businesscontacts);
 app.use('/contact', contact);   //use contact.js for contact view control
+app.use('/todos', todos);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -84,6 +84,12 @@
                 <li>
                   <% } %>
                   <a href="/businesscontacts">Business Contacts</a></li>
+                  <% if(title == "Todo List" ) { %>
+                  <li class="active">
+                    <% } else { %>
+                  <li>
+                    <% } %>
+                    <a href="/todoList">Todo List</a></li>
                   <% if(title == "Users" ) { %>
                   <li class="active">
                     <% } else { %>

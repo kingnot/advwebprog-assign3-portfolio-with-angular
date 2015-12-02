@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('advwebprog-assgn2-portfolio-site-auth:server');
+var debug = require('debug')('advwebprog-assign3-portfolio-with-angular:server');
 var http = require('http');
 
 /**
